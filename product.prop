@@ -9,3 +9,42 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 ro.lmk.log_stats=true
+
+# Dex
+ro.sys.fw.dex2oat_thread_count=8
+
+# Touch improvements
+touch.pressure.scale=0.001
+persist.sys.ui.hw=1
+view.scroll_friction=10
+touch.size.calibration=diameter
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.orientation.calibration=none
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
+# SurfaceFlinger
+debug.sf.enable_hwc_vds=1
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+debug.sf.enable_gl_backpressure=1
+debug.sf.hw=1
+persist.sys.sf.native_mode=0
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_smart_90_for_video=true
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
+ro.surface_flinger.wcg_composition_dataspace=143261696
